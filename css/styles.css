@@ -55,7 +55,7 @@ h1.white {
     background-color: rgba(255,255,255,.66);
     backdrop-filter: blur(29px);
     z-index: 99;
-    width: 70%;
+    width: 63%;
     height: 100%;
     /* -webkit-box-shadow: inset -6px 0px 20px -4px rgba(255,255,255,0.62);
   -moz-box-shadow: inset -6px 0px 20px -4px rgba(255,255,255,0.62);
@@ -85,8 +85,9 @@ box-shadow: 5px 0px 8px 0px rgba(255,255,255,.7);
   z-index: 100;
   top: 0;
   left: 0;
-    width: 70%;
+    width: 63%;
     padding:1em 2.2em;
+    overflow: hidden;
 }
 
 .pink {
@@ -97,6 +98,14 @@ h3.purple{
   font-family: 'Kanit', sans-serif;
   font-size: 3em;
   font-weight:300;
+}
+.larger {
+  font-size:1.4em;
+  margin-bottom:.1em;
+}
+.smaller {
+  font-size:1.2em;
+  font-style: italic;
 }
 
 .abso1 {
@@ -111,9 +120,59 @@ h3.purple{
     top: -15px;
 }
 
+.charcoal {
+  color:#4C4C4C
+}
+
+.bottom {
+  padding:1em;
+}
+
+.bottom .describe {
+  font-size: 1.1em;
+  line-height: 26px;
+  font-weight: 100;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.bottom ul {
+  margin-left: -2em;
+}
+
+.medium {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size:1.2em;
+
+  font-weight:600;
+}
+
+.p1 {
+  padding:.5em 0em 1em 0em;
+}
+
+#type {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.title1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight:600;
+}
+
+.description p {
+    font-size: 1.1em;
+    line-height: 26px;
+    font-weight: 100;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.black{
+  color:black
+
+}
+
 i.pink {
     font-size: .4em;
 }
+
 
 .landing .fas {
   color: #e5eef5 !important;
@@ -124,8 +183,8 @@ i.pink {
 
 .whiteBox {
   background: white;
-  margin-left: 10%;
-margin-right: 10%;
+  margin-left: 8%;
+margin-right: 8%;
 -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
 -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
 box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
@@ -137,7 +196,7 @@ box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
 }
 
 .wrapper {
-  height:100vh;
+  height:100%;
   background: #F3F3F3
 }
 .form-login-a {
@@ -361,9 +420,6 @@ span.heading {
   font-weight: 600;
 }
 
-h1 {
-  font-family: 'LibreFranklin';
-}
 
 /*
 .survey-container {
