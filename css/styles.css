@@ -27,7 +27,7 @@ h1.white {
   position: absolute;
   right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: auto;
   min-width: 62%;
@@ -36,6 +36,7 @@ h1.white {
   border-left: 5px solid white;
   max-height: 9.4em;
   padding-top: 2em;
+  padding-left:3em;
 }
 
 #home {
