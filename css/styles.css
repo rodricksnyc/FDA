@@ -3786,6 +3786,15 @@ body{
   }
 }
 
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+  .wrapper {
+    min-height: calc(220vh);
+  }
+
+}
+
 @media (max-width:991px) and (min-width:768px) {
   .wrapper {
     min-height: calc(185vh);
