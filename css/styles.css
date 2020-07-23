@@ -22,6 +22,13 @@ h1.white {
   font-family: 'Libre Franklin', sans-serif;
 }
 
+h1.headerFont {
+  font-size:30px;
+  font-weight: 500;
+  color:white;
+  font-family: 'Public Sans', sans-serif !important;
+}
+
 .end {
   background: #0b4372;
   position: absolute;
@@ -110,7 +117,7 @@ h3.purple{
   font-size:1em;
   margin-bottom: 0em;
   line-height: 20px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: 'Libre Franklin', sans-serif;
 
 }
@@ -138,7 +145,7 @@ h3.purple{
 .bottom .describe {
   font-size: 1.1em;
   line-height: 26px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: 'Libre Franklin', sans-serif;
 }
 .bottom ul {
@@ -176,7 +183,7 @@ h3.purple{
 .description p {
   font-size: 1.1em;
   line-height: 26px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: 'Libre Franklin', sans-serif;
 }
 .black{
@@ -195,6 +202,26 @@ footer {
   width: 100%;
   height: 8.5rem;
   background: #0b4372;
+}
+
+.rightSquare{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9220063025210083) 0%, rgba(255,255,255,0.835171568627451) 24%, rgba(255,255,255,0.8631827731092436) 63%, rgba(255,255,255,0.8267682072829132) 82%);
+  border: 2px solid #c23294;
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  padding:.8em 1.3em;
+
+}
+
+.rightSquare h4 {
+  font-size:1.4em;
+  margin-bottom:0em;
+}
+
+.strong{
+  font-weight:700;
 }
 
 
@@ -216,14 +243,35 @@ footer {
 
 footer .white {
   color:white;
-  margin-bottom: .1em
+  margin-bottom: .1em;
+  font-family: 'Public Sans', sans-serif !important;
 }
 
 footer .large {
   font-size:1.3em;
   margin-bottom: .5em
+}
 
 
+
+.pinkButton{
+  position: absolute;
+  /* top: 100%; */
+  bottom: 0;
+  top: 95em;
+  z-index: 999999;
+  left: calc(50% - 4em);
+  height: 2.6em;
+  width: 8em;
+  background: #c23294;
+  color: white;
+  border-radius: .65rem;
+}
+
+.pinkButton:hover {
+  background:white;
+  color:#c23294;
+  border: 1px solid #c23294;
 }
 
 .blackFlip {
@@ -259,11 +307,11 @@ footer .large {
 #home {
   position: relative;
   padding-top:10vh;
-  -webkit-perspective: 3000px;
+  /* -webkit-perspective: 3000px;
   -moz-perspective: 3000px;
   -o-perspective: 3000px;
-  -ms-perspective: 3000px;
-  perspective: 3000px;
+  -ms-perspective: 3000px; */
+  perspective: 4000px;
   height:auto;
   /* min-height:60vh; */
 }
@@ -271,15 +319,15 @@ footer .large {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: all 0.5s linear;
+  -webkit-transition: all 0.2s linear;
   -moz-transform-style: preserve-3d;
-  -moz-transition: all 0.5s linear;
+  -moz-transition: all 0.2s linear;
   -o-transform-style: preserve-3d;
-  -o-transition: all 0.5s linear;
+  -o-transition: all 0.2s linear;
   transform-style: preserve-3d;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   -ms-transform-style: preserve-3d;
-  -ms-transition: all 0.5s linear;
+  -ms-transition: all 0.2s linear;
   position: relative;
 }
 .flipped {
@@ -318,18 +366,23 @@ footer .large {
   bottom: 0;
   right: -1em;
   top: 104em;
-
+  height:auto;
+  min-height:4.8em
 }
 
 .flipIt img {
   width:5em;
 }
 
+.flipIt:focus{
+  outline:none
+}
+
 .wrapper {
   position: relative;
   width: 100%;
   height:100%;
-
+  min-height:120vh;
   /* min-height: calc(200vh); */
   position: relative;
   /* background: #F3F3F3; */
@@ -2969,27 +3022,50 @@ button.close {
 
 }
 
-@media (max-width:991px) and (min-width:768px) {
-  .pt13 {
-    padding-top: 8em;
-    padding-bottom: 2em;
-  }
 
-  h6.blue {
-    color: #00467f;
-    font-weight: 600;
-    font-size: 27px;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 0em;
+@media (max-width:1024px) {
+  .flipIt{
+    right:0em;
+  }
+}
+
+
+@media (max-width:991px) and (min-width:768px) {
+
+  .rightSquare h4 {
+    font-size: .9em;
     margin-bottom: 0em;
-    padding-right: 0em;
-    margin-right: 0em;
   }
-  #FAQ {
-    padding: 35px;
-    padding-top: 0px;
-    margin-top: -0px;
-  }
+  /*
+  .container {
+  max-width: 800px;
+}
+*/
+
+
+.pinkButton{
+  top:104em;
+}
+.pt13 {
+  padding-top: 8em;
+  padding-bottom: 2em;
+}
+
+h6.blue {
+  color: #00467f;
+  font-weight: 600;
+  font-size: 27px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-right: 0em;
+  margin-right: 0em;
+}
+#FAQ {
+  padding: 35px;
+  padding-top: 0px;
+  margin-top: -0px;
+}
 
 }
 
@@ -3773,20 +3849,20 @@ body{
 
 @media (max-height:820px) and (min-height:701px){
   /* .wrapper {
-    min-height: calc(230vh);
+  min-height: calc(230vh);
   } */
 }
 
 @media (max-height:700px) and (min-height:501px){
   /* .wrapper {
-    min-height: calc(300vh);
+  min-height: calc(300vh);
   } */
 
 }
 
 @media (max-height:500px){
   /* .wrapper {
-    min-height: calc(350vh);
+  min-height: calc(350vh);
   } */
 }
 
@@ -3802,9 +3878,9 @@ body{
 }
 
 @media (max-width:1050px) {
-/* .flipIt{
+  /* .flipIt{
   right:0em;
-} */
+  } */
 }
 
 
@@ -3812,27 +3888,27 @@ body{
 @media (max-width: 992px) and (max-width: 1024px) {
 
   /* .wrapper {
-    min-height: calc(220vh);
+  min-height: calc(220vh);
   } */
 
 }
 
 @media  (width: 1024px) and (height: 1366px) {
   /* .wrapper {
-    min-height: calc(130vh);
-  }
+  min-height: calc(130vh);
+}
 
-  .flipIt {
-    right:0em
-  } */
+.flipIt {
+right:0em
+} */
 }
 
 
 @media (max-width:991px) and (min-width:768px) {
   /* .wrapper {
-    min-height: calc(185vh);
+  min-height: calc(185vh);
   } */
-  h1.white {
+  .headerFont {
     font-size: 20px;
 
   }
