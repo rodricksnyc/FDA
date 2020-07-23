@@ -36,7 +36,7 @@ $(document).ready(function () {
 	})
 
 	if ($(document).height() >= 1100 && $(document).innerWidth() >= 1500) {
-		var highest = $('.whiteBox').height() + 400
+		var highest = $('.whiteBox').height() + 380
 		$('.wrapper').css({
 			'height' : highest
 		})
