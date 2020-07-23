@@ -39,14 +39,7 @@ h1.white {
   padding-left:3em;
 }
 
-#home {
-  position: relative;
-  padding-top:10vh;
-  -webkit-perspective: 800px;
--moz-perspective: 800px;
--o-perspective: 800px;
-perspective: 800px;
-}
+
 .heroImage {
   position: relative;
 }
@@ -146,7 +139,7 @@ h3.purple{
   font-family: 'Libre Franklin', sans-serif;
 }
 .bottom ul {
-  margin-left: -2em;
+  margin-left: -1.5em;
 }
 
 .medium {
@@ -158,6 +151,10 @@ h3.purple{
 
 .p1 {
   padding:.5em 0em 1em 0em;
+}
+
+.p0 {
+    padding: .1em 0em .1em 0em;
 }
 
 .smallImg {
@@ -236,8 +233,8 @@ footer .large {
 
 .whiteBox {
   background: white;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 4%;
+  margin-right: 4%;
 
   -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
@@ -247,43 +244,62 @@ footer .large {
 
 }
 
+#home {
+  position: relative;
+  padding-top:10vh;
+  -webkit-perspective: 3000px;
+	-moz-perspective: 3000px;
+	-o-perspective: 3000px;
+	-ms-perspective: 3000px;
+	perspective: 3000px;
+height:auto;
+/* min-height:60vh; */
+}
 .bigCard {
-      backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 0.5s linear;
+	-moz-transform-style: preserve-3d;
+	-moz-transition: all 0.5s linear;
+	-o-transform-style: preserve-3d;
+	-o-transition: all 0.5s linear;
+	transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	-ms-transform-style: preserve-3d;
+	-ms-transition: all 0.5s linear;
 }
+.flipped {
+transform:rotateY(-180deg)
+}
+
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+z-index:99
+}
+
+
 
 .back {
-    background: blue;
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-        backface-visibility: hidden;
-}
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	-webkit-box-sizing: border-box;
+	-moz-transform: rotateY(180deg);
+	-moz-box-sizing: border-box;
+	-o-transform: rotateY(180deg);
+	-o-box-sizing: border-box;
+	-ms-transform: rotateY(180deg);
+	-ms-box-sizing: border-box;
+	transform: rotateY(180deg);
 
-.bigCard.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
-
-
-.back {
-  background: blue;
-
-  transform: rotateY(180deg);
-}
-.scene {
-  perspective: 600px;
 }
 
 .flipIt {
@@ -299,9 +315,11 @@ footer .large {
 
 .wrapper {
   position: relative;
-  height:100%;
+  width: 100%;
+min-height: calc(200vh);
+position: relative;
   background: #F3F3F3;
-  padding-bottom: 20vh;
+  /* padding-bottom: 20vh; */
 }
 .form-login-a {
 
@@ -338,6 +356,10 @@ footer .large {
 }
 .rel {
   position:relative;
+}
+
+.blackLineTop {
+  border-top: 1px solid black;
 }
 
 .stop {
