@@ -56,9 +56,7 @@ h1.white {
   z-index: 99;
   width: 61%;
   height: 100%;
-  /* -webkit-box-shadow: inset -6px 0px 20px -4px rgba(255,255,255,0.62);
-  -moz-box-shadow: inset -6px 0px 20px -4px rgba(255,255,255,0.62);
-  box-shadow: inset -6px 0px 20px -4px rgba(255,255,255,0.62); */
+
   -webkit-box-shadow: 5px 0px 8px 0px rgba(255,255,255,.7);
   -moz-box-shadow: 5px 0px 8px 0px rgba(255,255,255,.7);
   box-shadow: 5px 0px 8px 0px rgba(255,255,255,.7);
@@ -191,7 +189,7 @@ i.pink {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -318,8 +316,8 @@ footer .large {
 .flipIt {
   position: absolute;
   bottom: 0;
-  right: -3em;
-  top: 106em;
+  right: -1em;
+  top: 104em;
 
 }
 
@@ -330,11 +328,21 @@ footer .large {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: calc(200vh);
+  height:100%;
+
+  /* min-height: calc(200vh); */
   position: relative;
-  background: #F3F3F3;
+  /* background: #F3F3F3; */
   /* padding-bottom: 20vh; */
 }
+html, body{
+  overflow-x: hidden;
+}
+
+body {
+  background: #F3F3F3;
+}
+
 .form-login-a {
 
   color: #00559b;
@@ -2215,9 +2223,6 @@ cursor: pointer;
   display:none;
 }
 
-html, body{
-  overflow-x: hidden;
-}
 
 .header-wrapper{
   display: flex;
@@ -3766,6 +3771,26 @@ body{
 
 }
 
+@media (max-height:820px) and (min-height:701px){
+  /* .wrapper {
+    min-height: calc(230vh);
+  } */
+}
+
+@media (max-height:700px) and (min-height:501px){
+  /* .wrapper {
+    min-height: calc(300vh);
+  } */
+
+}
+
+@media (max-height:500px){
+  /* .wrapper {
+    min-height: calc(350vh);
+  } */
+}
+
+
 @media (max-width:1215px) {
   h3.purple {
     font-size: 2.5em;
@@ -3776,29 +3801,37 @@ body{
   }
 }
 
-@media  (min-width: 1024px) and (max-width: 1366px) {
-  .wrapper {
+@media (max-width:1050px) {
+/* .flipIt{
+  right:0em;
+} */
+}
+
+
+
+@media (max-width: 992px) and (max-width: 1024px) {
+
+  /* .wrapper {
+    min-height: calc(220vh);
+  } */
+
+}
+
+@media  (width: 1024px) and (height: 1366px) {
+  /* .wrapper {
     min-height: calc(130vh);
   }
 
   .flipIt {
     right:0em
-  }
+  } */
 }
 
-
-@media (min-width: 992px) and (max-width: 1024px) {
-
-  .wrapper {
-    min-height: calc(220vh);
-  }
-
-}
 
 @media (max-width:991px) and (min-width:768px) {
-  .wrapper {
+  /* .wrapper {
     min-height: calc(185vh);
-  }
+  } */
   h1.white {
     font-size: 20px;
 

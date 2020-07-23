@@ -28,7 +28,13 @@ $('.flipIt').keypress(
     $(this).css('outline', 'none')
   })
 
+	var thing = $('.whiteBox').height() + 300
 
+	console.log(thing)
+
+	$('.wrapper').css({
+		'height' : thing
+	})
 
 
 })
