@@ -28,13 +28,22 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
-	var thing = $('.whiteBox').height() + 340
+	var high = $('.whiteBox').height() + 340
 
-	console.log(thing)
 
 	$('.wrapper').css({
-		'height' : thing
+		'height' : high
 	})
+
+	if ($(document).height() >= 1100 && $(document).innerWidth() >= 1500) {
+		var highest = $('.whiteBox').height() + 450
+		$('.wrapper').css({
+			'height' : highest
+		})
+
+
+	}
+
 
 	if ($(document).innerWidth() <= 1078) {
 		var higher = $('.whiteBox').height() + 450
