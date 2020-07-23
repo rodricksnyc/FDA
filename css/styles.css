@@ -87,7 +87,7 @@ h1.white {
 }
 
 .smallerImg {
-    max-width: 8em;
+  max-width: 8em;
 }
 
 .pink {
@@ -112,8 +112,8 @@ h3.purple{
   font-size:1em;
   margin-bottom: 0em;
   line-height: 20px;
-    font-weight: 100;
-    font-family: 'Libre Franklin', sans-serif;
+  font-weight: 100;
+  font-family: 'Libre Franklin', sans-serif;
 
 }
 
@@ -159,7 +159,7 @@ h3.purple{
 }
 
 .p0 {
-    padding: .1em 0em .1em 0em;
+  padding: .1em 0em .1em 0em;
 }
 
 .smallImg {
@@ -230,11 +230,11 @@ footer .large {
 
 .blackFlip {
 
-    background: black;
-    writing-mode: tb-rl;
-    width: 1px;
-    height: 120px;
-    margin: .2em 1em 0em 1em;;
+  background: black;
+  writing-mode: tb-rl;
+  width: 1px;
+  height: 120px;
+  margin: .2em 1em 0em 1em;;
 
 }
 
@@ -262,64 +262,64 @@ footer .large {
   position: relative;
   padding-top:10vh;
   -webkit-perspective: 3000px;
-	-moz-perspective: 3000px;
-	-o-perspective: 3000px;
-	-ms-perspective: 3000px;
-	perspective: 3000px;
-height:auto;
-/* min-height:60vh; */
+  -moz-perspective: 3000px;
+  -o-perspective: 3000px;
+  -ms-perspective: 3000px;
+  perspective: 3000px;
+  height:auto;
+  /* min-height:60vh; */
 }
 .bigCard {
-	width: 100%;
-	height: 100%;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transition: all 0.5s linear;
-	-moz-transform-style: preserve-3d;
-	-moz-transition: all 0.5s linear;
-	-o-transform-style: preserve-3d;
-	-o-transition: all 0.5s linear;
-	transform-style: preserve-3d;
-	transition: all 0.5s linear;
-	-ms-transform-style: preserve-3d;
-	-ms-transition: all 0.5s linear;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.5s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 0.5s linear;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: all 0.5s linear;
+  position: relative;
 }
 .flipped {
-transform:rotateY(-180deg)
+  transform:rotateY(-180deg)
 }
 
 
 .face {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
-z-index:99
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index:99
 }
 
-
-
 .back {
-	display: block;
-	-webkit-transform: rotateY(180deg);
-	-webkit-box-sizing: border-box;
-	-moz-transform: rotateY(180deg);
-	-moz-box-sizing: border-box;
-	-o-transform: rotateY(180deg);
-	-o-box-sizing: border-box;
-	-ms-transform: rotateY(180deg);
-	-ms-box-sizing: border-box;
-	transform: rotateY(180deg);
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  -ms-transform: rotateY(180deg);
+  -ms-box-sizing: border-box;
+  transform: rotateY(180deg);
 
 }
 
 .flipIt {
   position: absolute;
-  bottom: 6em;
-  right: 2em;
+  bottom: 0;
+  right: -3em;
+  top: 106em;
 
 }
 
@@ -330,8 +330,8 @@ z-index:99
 .wrapper {
   position: relative;
   width: 100%;
-min-height: calc(200vh);
-position: relative;
+  min-height: calc(200vh);
+  position: relative;
   background: #F3F3F3;
   /* padding-bottom: 20vh; */
 }
@@ -3761,6 +3761,75 @@ body{
     padding-top: .5em;
     padding-bottom: .5em;
     padding-right: .5em;
+  }
+
+
+}
+
+@media (max-width:1215px) {
+  h3.purple {
+    font-size: 2.5em;
+  }
+  .whiteBox {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media  (min-width: 1024px) and (max-width: 1366px) {
+  .wrapper {
+    min-height: calc(130vh);
+  }
+
+  .flipIt {
+    right:0em
+  }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+  .wrapper {
+    min-height: calc(185vh);
+  }
+  h1.white {
+    font-size: 20px;
+
+  }
+  .logo {
+    max-width: 18em;
+    min-width: 18em;
+  }
+  h3.purple {
+    font-size: 2em;
+  }
+
+  .larger {
+    font-size: 1em;
+
+  }
+
+  .smaller {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: .3em;
+  }
+
+  .flipIt {
+    position: absolute;
+    bottom: 0;
+    right: 0em;
+    top: 118em;
+  }
+
+
+  .content-spacer {
+    height: 0;
+  }
+
+  #home {
+    padding-top:5vh;
+  }
+  .hotPink{
+    overflow: auto;
   }
 
 
