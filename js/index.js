@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-	var card = document.querySelector('.card');
-	card.addEventListener( 'click', function() {
-	  card.classList.toggle('is-flipped');
+	$('.flipIt').on( 'click', function() {
+	$('.bigCard').toggleClass('flipped');
+	$('.front').toggleClass('hidden')
 	});
 
 

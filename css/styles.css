@@ -40,7 +40,12 @@ h1.white {
 }
 
 #home {
+  position: relative;
   padding-top:10vh;
+  -webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
 }
 .heroImage {
   position: relative;
@@ -233,6 +238,7 @@ footer .large {
   background: white;
   margin-left: 8%;
   margin-right: 8%;
+
   -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
   box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
@@ -241,7 +247,34 @@ footer .large {
 
 }
 
+.bigCard {
+      backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
 
+.back {
+    background: blue;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+        backface-visibility: hidden;
+}
+
+.bigCard.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
 
 
 .back {
@@ -250,7 +283,7 @@ footer .large {
   transform: rotateY(180deg);
 }
 .scene {
-  perspective: 1500px;
+  perspective: 600px;
 }
 
 .flipIt {
