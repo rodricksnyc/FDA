@@ -80,6 +80,8 @@ $('.flipIt').on('mouseleave', function() {
 		$('#name').html('Tina Richardson, Graphic Designer*')
 	}
 
+	//switch instagram
+
 	if ($('body').hasClass('gram2')) {
 		$("#switchAvatar").attr('src',"images/face2.jpg")
 		$("#switchGram").attr('src',"images/gram2.jpg")
