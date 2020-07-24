@@ -632,7 +632,24 @@ span.heading {
   font-family: 'Kanit', sans-serif;
   font-weight:300;
 }
+.instagram footer {
+  position: relative;
+}
 
+.pinkButton2 {
+    height: 2.8em;
+    width: 8.8em;
+    background: #c23294;
+    color: white;
+    border-radius: .65rem;
+    margin-bottom: 50px;
+}
+
+.pinkButton2:hover {
+  color: #c23294;
+  background: white;
+  border: 1px solid #c23294;
+}
 
 
 .instagram-post {
@@ -641,7 +658,11 @@ span.heading {
   padding-bottom: 60px;
   margin-left: 22%;
   margin-right: 22%;
-  margin-bottom: 30%;
+  margin-bottom: 50px;
+  margin-top:8%;
+  -webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.40);
 }
 
 .border {
@@ -780,9 +801,38 @@ left: 18px;
 
 }
 .timestamp {
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #8E8E8E;
+}
+
+.view-comments {
+    font-size: 13px;
+    letter-spacing: 0px;
+
+    color: #8E8E8E;
+    font-weight:700;
+    margin-bottom:0em;
+}
+#hashtag {
+  color:#0b4372
+}
+
+.topBorder {
+    border-top:1px solid #dee2e6;
+    padding:1em;
+}
+
+.add {
+  font-size: 13px;
+      letter-spacing: 0px;
+      color: #8E8E8E;
+      font-weight: 500;
+      margin-bottom: 0em;
+}
+.lightBlue{
+  color:#97DDF2
 }
 
 

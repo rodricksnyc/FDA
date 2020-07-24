@@ -68,16 +68,24 @@ $('.flipIt').on('mouseleave', function() {
 	//switch images and text
 
 	if ($('body').hasClass('ad2')) {
-		$("#switchImage").attr('src',"images/2.jpg");
+		$("#switchImage").attr('src',"images/2.jpg")
 		$("#switchText").html('can follow you into adulthood. Your')
 		$('#name').html('Dr. Tina Richardson, M.D., FAAD*')
 	}
 
 
 	if ($('body').hasClass('ad3')) {
-		$("#switchImage").attr('src',"images/3.jpg");
+		$("#switchImage").attr('src',"images/3.jpg")
 		$("#switchText").html('followed me into adulthood. My')
 		$('#name').html('Tina Richardson, Graphic Designer*')
+	}
+
+	if ($('body').hasClass('gram2')) {
+		$("#switchAvatar").attr('src',"images/face2.jpg")
+		$("#switchGram").attr('src',"images/gram2.jpg")
+		$("#switchParagraph").html("I found out I had endometriosis when I was 21. Endometriosis has beenone of the hardest things I’ve dealt with physically. If there were a pill I could take to help me manage my symptoms, I would try it. Well, I recently heard about this prescription medicine called Cerenys (cerozole 2.5 mg tablets). Cerenys is a pill you take once a day. It’s proven to relieve pain caused by endometriosis, including painful periods, pelvic pain in between periods, and pain with sex. If you struggle with endometriosis pain, ask your doctor if Cerenys is right for you. Don’t take Cerenys if you are pregnant or trying to become pregnant. The most serious side effects of Cerenys are bone loss, bone fractures, and high cholesterol levels. Common side effects include nausea, hot flashes, joint pain, headache, dizziness, and muscle pain.")
+		$('.username').html('evakatalin26')
+		$('#hashtag').html('#sponsored')
 	}
 
 
