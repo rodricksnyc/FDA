@@ -683,38 +683,80 @@ span.more-options {
   width: 100%;
 }
 .instagram-post-bottom {
-  padding: 15px 18px;
+  padding: 8px 18px 15px 18px;
+  position: relative;
 }
 
-.instagram-like-icon {
-  background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -72px -138px;
-  float: left;
-  height: 24px;
-  margin-right: 20px;
+
+ /* .instagram-like-icon {
+position: absolute;
+font-size: 1.6em;
+color: black;
+
+left: 18px;
   vertical-align: middle;
-  width: 24px;
+
 }
 
 .instagram-comment-icon {
-  background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
-  background-repeat: no-repeat;
-  background-position: -184px -52px;
-  float: left;
-  height: 24px;
-  vertical-align: middle;
-  width: 24px;
+  position: absolute;
+  font-size: 1.4em;
+      color: black;
+      transform: scaleX(1.3) skewY(4deg) rotate(-70deg);
+      left: 53px;
+      vertical-align: middle;
+      padding-top: 2px;
+} */
+
+.instagram-like-icon {
+    background: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -72px -138px;
+
+    height: 24px;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 24px;
+    position: absolute;
+    left: 10px;
+}
+
+
+.instagram-send-icon {
+    background: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -150px -137px;
+
+    height: 24px;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 24px;
+    position: absolute;
+    left: 90px;
+}
+
+.instagram-comment-icon {
+    background: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -184px -52px;
+
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+    position: absolute;
+    left: 50px;
 }
 
 .instagram-bookmark-icon {
-  background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+  background: url(../images/sprite.png);
   background-repeat: no-repeat;
   background-position: -182px -184px;
-  float: right;
+
   height: 24px;
   vertical-align: middle;
   width: 24px;
+  position: absolute;
+  right: 10px;
 }
 .likes-amount {
   display: block;
