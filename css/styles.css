@@ -651,6 +651,10 @@ span.heading {
   border: 1px solid #c23294;
 }
 
+footer a:hover {
+color:white;
+}
+
 
 .instagram-post {
   background: white;
