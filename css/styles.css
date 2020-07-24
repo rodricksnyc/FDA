@@ -624,24 +624,34 @@ span.heading {
   font-weight: 600;
 }
 
+#switchText{
+  font-family: 'Kanit', sans-serif;
+}
+
 
 
 .instagram-post {
-    background: #f7f7f7;
-    margin: 0 auto;
+    background: white;
+    padding:17px;
     padding-bottom: 60px;
-    margin-left: 4%;
-    margin-right:4%
+      margin-left: 22%;
+      margin-right: 22%;
+      margin-bottom: 30%;
+}
+
+.border {
+  border:1px solid #f7f7f7
 }
 
 .instagram-post-top {
-    padding: 15px 35px;
+    padding: 15px 18px;
     line-height: 45px;
     vertical-align: middle;
+    position: relative;
 }
 .instagram-post-top img {
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 10px;
     vertical-align: middle;
     width: 45px;
 }
@@ -649,24 +659,26 @@ span.heading {
 span.username {
     font-weight: 600;
     vertical-align: middle;
+    color:black
 }
 
 span.more-options {
-    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
-    background-repeat: no-repeat;
-    background-position: -78px -210px;
-    float: right;
-    height: 24px;
-    position: relative;
-    top: 11px;
-    vertical-align: middle;
-    width: 24px;
+  position: absolute;
+      /* top: 11px; */
+      vertical-align: middle;
+      /* width: 24px; */
+      font-size: 1.8em;
+      color: black;
+
+      right: 18px;
+
+
 }
 .post-container img {
     width: 100%;
 }
 .instagram-post-bottom {
-    padding: 15px 45px;
+    padding: 15px 18px;
 }
 
 .instagram-like-icon {
