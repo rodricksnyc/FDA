@@ -761,13 +761,23 @@ left: 18px;
 .likes-amount {
   display: block;
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: 14px;
   text-align: left;
+  color: black;
+  margin-left: -6px;
+
+}
+
+.instagram-caption {
+  margin-top:-10px;
+  color:black
 }
 .instagram-caption .username {
   margin-right: 5px;
-  margin-top: -3px;
-  vertical-align: top;
+
+      vertical-align: top;
+      margin-left: -3px;
+
 }
 .timestamp {
   font-size: 14px;
