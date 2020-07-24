@@ -1,26 +1,19 @@
 $(document).ready(function () {
 
 	var flipThis = function() {
-
 		$(".bigCard").toggleClass('flipped')
 	}
-
 	$('.flipIt').keypress(
 		flipThis
-
 	).click(
 		flipThis
 	);
 
 
-
-
 	$("a, button, input, [tabIndex='0']").on("keyup", function (e) {
-
 		var code = (e.keyCode ? e.keyCode : e.which);
 		if (code == 9) {
 			$(this).css('outline', 'dashed 3px #4599ff')
-
 		}
 
 	})
@@ -41,7 +34,6 @@ $(document).ready(function () {
 			'height' : highest
 		})
 
-
 	}
 
 
@@ -51,9 +43,7 @@ $(document).ready(function () {
 			'height' : more
 		})
 
-
 	}
-
 
 
 	if ($(document).innerWidth() <= 1078) {
@@ -63,6 +53,23 @@ $(document).ready(function () {
 		})
 
 	}
+
+
+	//switch images and text
+
+	if ($('body').hasClass('ad2')) {
+		$("#switchImage").attr('src',"images/2.jpg");
+		$("#switchText").html('can follow you into adulthood. Your')
+		$('#name').html('Dr. Tina Richardson, M.D., FAAD*')
+	}
+
+
+	if ($('body').hasClass('ad3')) {
+		$("#switchImage").attr('src',"images/3.jpg");
+		$("#switchText").html('followed me into adulthood. My')
+		$('#name').html('Tina Richardson, Graphic Designer*')
+	}
+
 
 
 })
