@@ -21,6 +21,16 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
+
+$('.flipIt').on('mouseenter', function() {
+	$('.flipIt img').attr('src',"images/flip-hover.svg");
+})
+
+
+$('.flipIt').on('mouseleave', function() {
+	$('.flipIt img').attr('src',"images/flip.svg");
+})
+
 	var high = $('.whiteBox').height() + 340
 
 

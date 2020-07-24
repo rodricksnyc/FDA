@@ -29,6 +29,8 @@ h1.headerFont {
   font-family: 'Public Sans', sans-serif !important;
 }
 
+
+
 .end {
   background: #0b4372;
   position: absolute;
@@ -620,6 +622,98 @@ span.heading {
   top: 24%;
   left: 24%;
   font-weight: 600;
+}
+
+
+
+.instagram-post {
+    background: #f7f7f7;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    margin-left: 4%;
+    margin-right:4%
+}
+
+.instagram-post-top {
+    padding: 15px 35px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+.instagram-post-top img {
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 45px;
+}
+
+span.username {
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+span.more-options {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -78px -210px;
+    float: right;
+    height: 24px;
+    position: relative;
+    top: 11px;
+    vertical-align: middle;
+    width: 24px;
+}
+.post-container img {
+    width: 100%;
+}
+.instagram-post-bottom {
+    padding: 15px 45px;
+}
+
+.instagram-like-icon {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -72px -138px;
+    float: left;
+    height: 24px;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 24px;
+}
+
+.instagram-comment-icon {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -184px -52px;
+    float: left;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+}
+
+.instagram-bookmark-icon {
+    background: url(https://res.cloudinary.com/jorpdesigns/image/upload/v1533421516/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -182px -184px;
+    float: right;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+}
+.likes-amount {
+    display: block;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: left;
+}
+.instagram-caption .username {
+    margin-right: 5px;
+    margin-top: -3px;
+    vertical-align: top;
+}
+.timestamp {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
