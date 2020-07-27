@@ -263,8 +263,8 @@ footer .large {
 .pinkButton{
   position: absolute;
   /* top: 100%; */
-  bottom: 0;
-  top: 95em;
+  bottom: 10.5em;
+  /* top: 95em; */
   z-index: 999999;
   left: calc(50% - 4em);
   height: 2.6em;
@@ -1820,11 +1820,20 @@ cursor: pointer;
   }
 
   .pinkButton{
-    top:104em;
+    top:110em;
   }
   .pt13 {
     padding-top: 8em;
     padding-bottom: 2em;
+  }
+
+  h1.headerFont {
+    font-size: 21px;
+
+  }
+
+  .end {
+    padding-left: 2em;
   }
 
   h6.blue {
@@ -1843,6 +1852,16 @@ cursor: pointer;
     margin-top: -0px;
   }
 
+}
+
+@media (max-width:1215px) {
+  h3.purple {
+    font-size: 2.5em;
+  }
+  .whiteBox {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1877,14 +1896,63 @@ cursor: pointer;
 
   .end {
     position: absolute;
-    right: 15px;
+    right: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: auto;
-    min-width: 6em;
+    min-width: 4.5em;
+    max-width:55%;
+    padding: 0em .5em 0em 1em;
   }
 
+  .logo {
+    max-width: 11em;
+    padding-left: .2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    min-width:11em;
+  }
+
+  h3.purple {
+    font-size: 1em;
+}
+
+.larger {
+    font-size: 1em;
+
+}
+
+.smaller {
+    font-size: 1em;
+
+}
+
+.hotPink {
+  padding:.5em;
+}
+
+.description p {
+    font-size: .9em;
+    line-height: 22px;
+
+}
+
+.rightSquare h4 {
+    font-size: .7em;
+    margin-bottom: 0em;
+}
+
+.pinkButton {
+  top:146em;
+}
+
+
+  h1.headerFont {
+      font-size: 14px;
+
+    }
 
   .custom-select{
     display:block;
@@ -2017,13 +2085,6 @@ cursor: pointer;
     display: inline-block !important;
   }
 
-  .logo {
-    max-width: 60%;
-    padding-left: 1.2em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-right: .5em;
-  }
 
   span.heading {
     color: #00559b;
@@ -2106,15 +2167,7 @@ cursor: pointer;
 
 
 
-@media (max-width:1215px) {
-  h3.purple {
-    font-size: 2.5em;
-  }
-  .whiteBox {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
+
 
 @media (max-width:1050px) {
 
@@ -2122,8 +2175,12 @@ cursor: pointer;
 
 
 
-@media (max-width: 992px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .instagram-post {
+      margin-left: 5%;
+      margin-right: 5%;
 
+    }
 }
 
 @media  (width: 1024px) and (height: 1366px) {
