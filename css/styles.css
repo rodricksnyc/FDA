@@ -1579,7 +1579,6 @@ p.modalFooter {
 @media (max-width: 767px) {
 
 
-
   #home {
     position: relative;
     padding-top:10vh;
@@ -1663,7 +1662,7 @@ p.modalFooter {
     font-size: .7em;
     margin-bottom: 0em;
 }
-/* 
+/*
 .pinkButton {
   top:146em;
 } */
