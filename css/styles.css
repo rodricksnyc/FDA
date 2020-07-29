@@ -1634,44 +1634,12 @@ p.modalFooter {
     min-width:11em;
   }
 
-  h3.purple {
-    font-size: 1em;
-}
-
-.larger {
-    font-size: 1em;
-
-}
-
-.smaller {
-    font-size: 1em;
-
-}
-
-.hotPink {
-  padding:.5em;
-}
-
-.description p {
-    font-size: .9em;
-    line-height: 22px;
-
-}
-
-.rightSquare h4 {
-    font-size: .7em;
-    margin-bottom: 0em;
-}
-/*
-.pinkButton {
-  top:146em;
-} */
 
 
   h1.headerFont {
-      font-size: 14px;
+    font-size: 14px;
 
-    }
+  }
 
   .custom-select{
     display:block;
@@ -1831,6 +1799,178 @@ p.modalFooter {
   }
 }
 
+
+
+
+
+@media (max-width:1050px) {
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .instagram-post {
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+}
+
+@media  (width: 1024px) and (height: 1366px) {
+
+}
+
+
+@media (max-width:991px) and (min-width:768px) {
+
+  .headerFont {
+    font-size: 20px;
+
+  }
+  .logo {
+    max-width: 18em;
+    min-width: 18em;
+  }
+  h3.purple {
+    font-size: 2em;
+  }
+
+  .larger {
+    font-size: 1em;
+
+  }
+
+  .smaller {
+    font-size: 1em;
+    font-style: italic;
+
+  }
+
+  .content-spacer {
+    height: 0;
+  }
+
+  .hotPink{
+    overflow: auto;
+  }
+
+
+}
+
+@media (max-width:767px) {
+  h3.purple {
+    font-size: 2em;
+  }
+
+  /* .larger {
+  font-size: 1em;
+
+}
+
+.smaller {
+font-size: 1em;
+
+} */
+
+.hotPink {
+  padding:1em;
+}
+
+/* .description p {
+font-size: .9em;
+line-height: 22px;
+
+} */
+
+.rightSquare h4 {
+  font-size: 1em;
+  margin-bottom: 0em;
+}
+/*
+.pinkButton {
+top:146em;
+} */
+
+.flipIt {
+  top:90%;
+}
+
+
+.white-overlay {
+  display:none;
+}
+
+.hotPink {
+  position:relative;
+  width:100%;
+}
+
+/* .smaller {
+font-size: 1em;
+font-style: italic;
+margin-bottom: .1em;
+} */
+
+.content-spacer {
+  height: 0;
+}
+
+#home {
+  padding-top:5vh;
+}
+.hotPink{
+  overflow: auto;
+}
+
+.rightSquare {
+  right: 10%;
+  bottom: 0%;
+  padding: .6em;
+  max-width: none;
+  width: 70%;
+  left: 10%;
+}
+
+.abso1 {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+}
+.hotPink{
+  border-left: none;
+
+}
+
+.whiteBox {
+  border-left: 20px solid #c23294;
+}
+
+.bottom img {
+  max-width:12em;
+}
+
+.abso2 {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+.mb3 {
+  margin-bottom: 0em;
+}
+
+.description{
+  margin-bottom:5em;
+}
+
+.bottom{
+  padding:1em 2em;
+  /* margin-top: 13%; */
+}
+}
+
+
+
 @media (max-width: 320px) {
   html, body{
     min-width: 320px !important;
@@ -1883,120 +2023,9 @@ p.modalFooter {
   }
 
 
-}
-
-
-
-
-
-@media (max-width:1050px) {
-
-}
-
-
-
-@media (max-width: 1024px) {
-  .instagram-post {
-      margin-left: 5%;
-      margin-right: 5%;
-
-    }
-}
-
-@media  (width: 1024px) and (height: 1366px) {
-
-}
-
-
-@media (max-width:991px) and (min-width:768px) {
-
-  .headerFont {
-    font-size: 20px;
-
-  }
-  .logo {
-    max-width: 18em;
-    min-width: 18em;
-  }
-  h3.purple {
-    font-size: 2em;
-  }
-
-  .larger {
-    font-size: 1em;
-
-  }
-
-  .smaller {
-    font-size: 1em;
-    font-style: italic;
-
-  }
-
-  .content-spacer {
-    height: 0;
-  }
-
-  .hotPink{
-    overflow: auto;
+  .description{
+    margin-bottom:7em;
   }
 
 
-}
-
-@media (max-width:767px) {
-
-    .larger {
-      font-size: .9em;
-
-      margin-bottom: .1em;
-
-    }
-
-    .smaller {
-      font-size: .9em;
-      font-style: italic;
-      margin-bottom: .1em;
-    }
-
-    .content-spacer {
-      height: 0;
-    }
-
-    #home {
-      padding-top:5vh;
-    }
-    .hotPink{
-      overflow: auto;
-    }
-
-    .rightSquare {
-      right: 4%;
-      bottom: 4%;
-      padding: .5em .2em;
-      max-width: 8em;
-  }
-
-  .abso1 {
-      position: absolute;
-      left: -4px;
-      top: -8px;
-  }
-    .hotPink{
-    border-left: 20px solid #c23294;
-
-    }
-
-    .abso2 {
-    position: absolute;
-    right: -6px;
-    top: -6px;
-}
-.mb3 {
-    margin-bottom: 0em;
-}
-
-.bottom{
-  padding:1em 2em;
-}
 }
