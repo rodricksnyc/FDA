@@ -1838,7 +1838,7 @@ p.modalFooter {
 }
 
 
-@media (max-width:330px) {
+@media (max-width:325px) {
   .hero-img-container.secondOne {
     height: 1025px !important;
     bottom: 0 !important;
@@ -1875,10 +1875,11 @@ p.modalFooter {
 
   .logo {
     max-width: 65%;
-    padding-left: 1.3em;
+    padding-left: .2em;
     padding-top: .5em;
     padding-bottom: .5em;
     padding-right: .5em;
+    min-width:9em;
   }
 
 
