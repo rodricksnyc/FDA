@@ -48,6 +48,7 @@ h1.headerFont {
   max-height: 10em;
   padding-top: 2em;
   padding-left:3em;
+  padding-right: .4em
 }
 
 .heroImage {
