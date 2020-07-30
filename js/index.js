@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 	}
 
-	
+
 	if ($(document).height() >= 1100 && $(document).innerWidth() >= 1200) {
 		var more = $('.whiteBox').height() + 380
 		$('.wrapper').css({
@@ -57,12 +57,14 @@ $(document).ready(function () {
 
 
 	if ($(document).innerWidth() <= 1078) {
-		var higher = $('.whiteBox').height() + 450
+		var higher = $('.whiteBox').height() + 360
 		$('.wrapper').css({
 			'height' : higher
 		})
 
 	}
+
+
 
 
 	//switch images and text
