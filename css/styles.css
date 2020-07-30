@@ -1901,6 +1901,13 @@ p.modalFooter {
   .description{
     margin-bottom:4em;
   }
+  .flipIt.noHeader {
+
+    bottom: 0;
+    right: 3%;
+    top: 98%;
+
+}
 
   .bottom{
     padding:1em 2em;
