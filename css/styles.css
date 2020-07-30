@@ -1548,6 +1548,9 @@ p.modalFooter {
   #home {
     padding-top:3vh;
   }
+  .survey-wrapper {
+    max-width: 94%;
+}
 }
 
 
@@ -2086,7 +2089,8 @@ p.modalFooter {
     display: block;
     position: fixed;
     left: calc(50% - 1.25rem);
-
+    top: 2%;
+    bottom: 0;
     z-index: 100;
     background: #c23294;
     color: white;
@@ -2102,6 +2106,9 @@ p.modalFooter {
     visibility: hidden;
   }
 
+  .survey-wrapper {
+    max-width: 94%;
+}
 
   .flipIt img {
     width: 3em;
