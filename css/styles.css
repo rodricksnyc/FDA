@@ -235,13 +235,15 @@ h3.purple{
   font-family: 'Public Sans', sans-serif !important;
 }
 .button-default.next {
-  background-color: #858585
+  background-color: #58595b
 }
 .button-default:hover {
   background-color:#1e1c84
 }
 
-
+.gray{
+  color:#58595b
+}
 
 .consent{
   display: flex;

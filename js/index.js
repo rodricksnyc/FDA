@@ -136,7 +136,7 @@ $(document).ready(function () {
 			$('.next').css('background', '#c23294')
 		}
 		else {
-			$('.next').css('background', '#858585')
+			$('.next').css('background', '#58595b')
 		}
 	})
 
