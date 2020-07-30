@@ -122,9 +122,12 @@ $(document).ready(function () {
 		$('html, body').stop().animate({
 			'scrollTop': offSet
 		}, 1200, 'swing');
-
-
 	}
+
+	$('.customStack input').keydown(function (event) {
+		$('.next').css('background', '#c23294')
+
+});
 
 
 	$('.form-check input').change(function () {
