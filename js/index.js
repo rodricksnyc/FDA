@@ -66,6 +66,20 @@ $(document).ready(function () {
 
 
 
+$(".form-check").on("keyup", function (e) {
+
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 9) {
+    $('.form-check').each(function() {
+      $(this).addClass('focusClass')
+    });
+
+  }
+
+})
+
+
+
 
 	//switch images and text
 
