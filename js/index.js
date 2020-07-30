@@ -21,15 +21,17 @@ $(document).ready(function () {
 		$(this).css('outline', 'none')
 	})
 
+	if ($(document).innerWidth() >= 768) {
+		$('.flipIt').on('mouseenter', function() {
+			$('.flipIt img').attr('src',"images/flip-hover.svg");
+		})
 
-	$('.flipIt').on('mouseenter', function() {
-		$('.flipIt img').attr('src',"images/flip-hover.svg");
-	})
 
+		$('.flipIt').on('mouseleave', function() {
+			$('.flipIt img').attr('src',"images/flip.svg");
+		})
 
-	$('.flipIt').on('mouseleave', function() {
-		$('.flipIt img').attr('src',"images/flip.svg");
-	})
+	}
 
 	var high = $('.whiteBox').height() + 340
 
@@ -57,26 +59,88 @@ $(document).ready(function () {
 
 
 	if ($(document).innerWidth() <= 1078) {
-		var higher = $('.whiteBox').height() + 360
+		var higher = $('.whiteBox').height() + 290
 		$('.wrapper').css({
 			'height' : higher
 		})
 
 	}
 
+	if ($(document).innerWidth() <= 360) {
+		var more = $('.whiteBox').height() + 350
+		$('.wrapper').css({
+			'height' : more
+		})
+
+	}
 
 
-$(".form-check").on("keyup", function (e) {
+	if ($(document).innerWidth() <= 767) {
+		$('.flipIt img').attr('src', 'images/flip-icon.svg')
 
-  var code = (e.keyCode ? e.keyCode : e.which);
-  if (code == 9) {
-    $('.form-check').each(function() {
-      $(this).addClass('focusClass')
-    });
+		$('.flipIt').click(function() {
 
-  }
+			if ($('.bigCard').hasClass('flipped')) {
 
-})
+				$('.flipIt').css({
+					'box-shadow' :'0px 0px 20px -2px rgba(0,0,0,0.45)',
+					'background' : 'white'
+				})
+				$('.flipIt img').attr('src', 'images/flip-blue.svg')
+
+			}
+
+			else {
+
+				$('.flipIt').css({
+					'box-shadow' :'none',
+					'background' : '#1e1c84'
+				})
+				$('.flipIt img').attr('src', 'images/flip-icon.svg')
+
+			}
+		})
+
+
+
+	}
+
+
+	$('.back-to-top').click(() => {
+		scrollfn("#overview");
+	})
+
+
+
+	$(window).scroll(function () {
+		((window.pageYOffset || document.documentElement.scrollTop) > 100) ?
+		$('.back-to-top, .flipIt').css({ opacity: 1, visibility: "visible" }) :
+		$('.back-to-top, .flipIt').css({ opacity: 0, visibility: "hidden" });
+	});
+
+	function scrollfn(e) {
+		let $target = $(e),
+		offSet = e === "#overview" ? 0 : $target.offset().top;
+		$('html, body').stop().animate({
+			'scrollTop': offSet
+		}, 1200, 'swing');
+
+
+	}
+
+
+
+	$(".form-check").on("keyup", function (e) {
+
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$('.form-check').each(function() {
+				$(this).addClass('focusClass')
+			});
+
+		}
+
+	})
 
 
 
