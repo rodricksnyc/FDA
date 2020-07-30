@@ -120,6 +120,7 @@ h3.purple{
   padding: .6em 0em !important;
   margin-bottom: 0em !important;
   color: black;
+  font-family: 'Public Sans', sans-serif !important;
 }
 
 .start {
@@ -146,7 +147,11 @@ h3.purple{
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
-  padding-left: 24px !important;
+  padding-left: 5px !important;
+}
+
+.ques-wrapper .form-group label {
+  display: flex;
 }
 
 .form-check label {
@@ -158,7 +163,7 @@ h3.purple{
 }
 
 .form-check input + label::before {
-  border: 1px solid black;
+  border: 1px solid #007bbc;
   content: "";
   height: 18px;
   left: 0;
@@ -171,12 +176,12 @@ h3.purple{
 .form-check input + label::after {
   content: "";
   opacity: 0;
-  border: 7px solid black;
+  border: 7px solid #007bbc;
   border-radius: 50%;
   position: absolute;
   left: 2px;
   top: 5px;
-  color: black;
+  color: #007bbc;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -192,6 +197,50 @@ h3.purple{
   margin-bottom: 0em;
   padding-bottom: 0em;
 }
+
+.customStack input {
+  margin-left:1rem;
+}
+
+.customStack  {
+  margin-bottom:1em;
+}
+
+.btn-group-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.survey-btn-group {
+  display: flex;
+  margin: 0rem 0rem 4rem 0rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-default {
+  margin: 1rem 1.5rem !important;
+  display: block;
+  padding: .6em 3.5em !important;
+  background-color: #c23294;
+  color: #ffffff;
+  font-size: .9rem !important;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: .5rem;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+  font-family: 'Public Sans', sans-serif !important;
+}
+.button-default.next {
+  background-color: #858585
+}
+.button-default:hover {
+  background-color:#1e1c84
+}
+
 
 
 .consent{
@@ -220,14 +269,9 @@ h3.purple{
 
 .survey-container {
   width: 100%;
-  min-height: calc(100vh - 14rem);
+  min-height: calc(100vh - 28rem);
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  background-image: url(../img/pattern.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
   /* box-shadow: inset 0px 5rem 5rem -4rem rgba(0,0,0,0.75), inset 0rem -5rem 5rem -4rem rgba(0,0,0,0.75); */
 }
 
@@ -242,10 +286,12 @@ h3.purple{
 }
 
 .blue{
-  color:#007bbc
+  color:#007bbc;
+  font-family: 'Public Sans', sans-serif !important;
 }
 .darkBlue {
-  color:#0b4372
+  color:#0b4372;
+  font-family: 'Public Sans', sans-serif !important;
 }
 
 .focusClass input:focus + label::before {
@@ -1461,22 +1507,22 @@ p.modalFooter {
   padding: 10px 15px !important;
 }
 
-.form-control {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: none;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: white;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: 2px solid white;
-  border-radius: .5rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  text-align: left;
-}
+/* .form-control {
+display: block;
+width: 100%;
+height: 100%;
+padding: none;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5;
+color: white;
+background-color: transparent;
+background-clip: padding-box;
+border: 2px solid white;
+border-radius: .5rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+text-align: left;
+} */
 .bottomLine {
   border-bottom: 1px solid #a5e371;
   padding-bottom: 2em;
@@ -1550,7 +1596,7 @@ p.modalFooter {
   }
   .survey-wrapper {
     max-width: 94%;
-}
+  }
 }
 
 
@@ -2108,7 +2154,7 @@ p.modalFooter {
 
   .survey-wrapper {
     max-width: 94%;
-}
+  }
 
   .flipIt img {
     width: 3em;

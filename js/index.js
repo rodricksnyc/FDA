@@ -101,8 +101,6 @@ $(document).ready(function () {
 			}
 		})
 
-
-
 	}
 
 
@@ -129,6 +127,15 @@ $(document).ready(function () {
 	}
 
 
+	$('.form-check input').change(function () {
+		if ($('input').is(':checked')) {
+
+			$('.next').css('background', '#c23294')
+		}
+		else {
+			$('.next').css('background', '#858585')
+		}
+	})
 
 	$(".form-check").on("keyup", function (e) {
 
