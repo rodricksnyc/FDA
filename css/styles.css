@@ -1834,7 +1834,7 @@ p.modalFooter {
 
 
   .flipIt {
-    top:91.3%;
+    top:92%;
   }
 
 
@@ -1909,7 +1909,7 @@ p.modalFooter {
 }
 @media (max-width: 375px) {
   .flipIt {
-    top:92%;
+    top:91.5%;
   }
 }
 
