@@ -1597,8 +1597,19 @@ text-align: left;
   .survey-wrapper {
     max-width: 94%;
   }
+
 }
 
+@media (max-width: 1024px) and (min-width:768px){
+.survey-container{
+  min-height: calc(100vh - 54rem);
+}
+
+main{
+  height: 76vh
+}
+
+}
 
 
 @media (max-width: 997px) and (min-width: 768px){
