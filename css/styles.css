@@ -2384,6 +2384,7 @@ table {
   width:100%;
   max-width: none;
   border: none !important;
+  margin-bottom: 3em;
 }
 
 
@@ -2413,14 +2414,14 @@ tbody tr .form-check-label {
 }
 
 tbody tr .form-check {
-  display: unset;
+  display: table-cell;
   padding-left:0em;
   margin:0em;
 }
 
 tbody tr .prompt {
   padding:10px 0px 10px 10px !important;
-  max-width:50%;
+  max-width:70%;
   text-align: left;
   font-size: 15px !important;
 
@@ -2437,9 +2438,10 @@ tbody tr .form-check input + label::before {
   height: 18px;
   left: 40px;
   position: absolute;
-  top: 20px;
+  top: 11px;
   width: 18px;
   border-radius: 50%;
+  background: white
 }
 
 tbody tr .form-check input + label::after {
@@ -2449,7 +2451,7 @@ tbody tr .form-check input + label::after {
   border-radius: 50%;
   position: absolute;
   left: 42px;
-  top: 22px;
+  top: 13px;
   color: #007bbc;
   transition: opacity 0.2s ease-in-out;
 }
@@ -2464,6 +2466,17 @@ tbody tr label {
   font-size:0px;
 }
 
+
 tbody tr input[type="radio"] {
   margin: 18px;
+}
+
+tbody tr .radio-inline {
+    font-size: 0px !important;
+    display: inline-block;
+}
+
+tbody tr .form-check .radio-inline {
+    font-size: 0px !important;
+    display: inline-block;
 }
