@@ -271,7 +271,7 @@ h3.purple{
 
 .survey-container {
   width: 100%;
-  min-height: calc(100vh - 28rem);
+  min-height: calc(100vh - 20rem);
   position: relative;
 
   /* box-shadow: inset 0px 5rem 5rem -4rem rgba(0,0,0,0.75), inset 0rem -5rem 5rem -4rem rgba(0,0,0,0.75); */
@@ -299,6 +299,14 @@ h3.purple{
 .focusClass input:focus + label::before {
   box-shadow: 0 0 0 3px #c23294;
   outline: 3px solid transparent; /* For Windows high contrast mode. */
+}
+
+.noQuestions {
+  padding:3em
+}
+
+.noQuestions p {
+  font-size:20px !important
 }
 
 .back-to-top{
