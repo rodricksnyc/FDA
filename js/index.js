@@ -131,10 +131,11 @@ $(document).ready(function () {
 
 
 	$('.form-check input').change(function () {
-		if ($('input').is(':checked')) {
+		if ($('input').not('#Consent_2').is(':checked')) {
 
 			$('.next').css('background', '#c23294')
 		}
+
 		else {
 			$('.next').css('background', '#58595b')
 		}
