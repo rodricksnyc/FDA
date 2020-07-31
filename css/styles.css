@@ -2587,6 +2587,15 @@ tbody tr .form-check .radio-inline {
     display: inline-block;
 }
 
+.blueRow{
+  background: #007bbc
+}
+
+ .mx thead > tr.blueRow > td {
+  color:white !important;
+  padding-top:10px !important;
+}
+
 
 @media (max-width:767px) {
 
