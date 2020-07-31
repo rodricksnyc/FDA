@@ -2395,15 +2395,15 @@ table {
   margin-bottom: 3em;
 }
 
-
+/*
 @media (max-width:767px) {
 
   .mx thead > tr > td, .mx thead > tr > th {
     vertical-align: baseline;
-    font-size: 9px;
+    font-size: 12px;
 
   }
-}
+} */
 
 .mx-row {
   background-color:white !important;
@@ -2429,7 +2429,7 @@ tbody tr .form-check {
 
 tbody tr .prompt {
   padding:10px 0px 10px 10px !important;
-  max-width:70%;
+  /* max-width:70%; */
   text-align: left;
   font-size: 15px !important;
 
