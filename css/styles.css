@@ -326,6 +326,10 @@ h3.purple{
   display: none
 }
 
+.surveyPic1 {
+margin-left:-24%;
+}
+
 
 .larger {
   font-size:1.3em;
@@ -1738,7 +1742,10 @@ text-align: left;
 
   .surveyPic1, .surveyPic2 {
     margin-top:1em;
+    margin-left:0%;
   }
+
+
 
   #home {
     position: relative;
