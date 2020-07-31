@@ -155,13 +155,11 @@ $(document).ready(function () {
 
 
 	var height = $('.survey-wrapper').height()
-	console.log(height)
 
-$(window).on('load', function() {
 	if ($('.survey-wrapper').height() < 400) {
 		$('.survey-container').css('min-height', 'calc(100vh - 20rem)')
 }
-})
+
 
 
 
