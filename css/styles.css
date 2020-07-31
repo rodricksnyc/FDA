@@ -160,7 +160,7 @@ h3.purple{
   font-size: 17px !important;
   font-weight: 400 !important;
 
-  color: black;
+  color: #404040;
 }
 
 .form-check input + label::before {
@@ -278,6 +278,9 @@ h3.purple{
   color: black;
 }
 
+.mt1 {
+  margin-top:1em;
+}
 
 .survey-container {
   width: 100%;
@@ -1732,6 +1735,11 @@ text-align: left;
       position: relative;
   }
 
+
+  .surveyPic1, .surveyPic2 {
+    margin-top:1em;
+  }
+
   #home {
     position: relative;
     padding-top:10vh;
@@ -1969,6 +1977,10 @@ text-align: left;
     margin-left: 5%;
     margin-right: 5%;
 
+  }
+
+  .ques-wrapper.radiobuttons{
+    padding:0em;
   }
 }
 
