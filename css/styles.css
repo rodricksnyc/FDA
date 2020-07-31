@@ -2425,16 +2425,6 @@ table {
   margin-bottom: 3em;
 }
 
-/*
-@media (max-width:767px) {
-
-  .mx thead > tr > td, .mx thead > tr > th {
-    vertical-align: baseline;
-    font-size: 12px;
-
-  }
-} */
-
 .mx-row {
   background-color:white !important;
 }
@@ -2517,4 +2507,22 @@ tbody tr .radio-inline {
 tbody tr .form-check .radio-inline {
     font-size: 0px !important;
     display: inline-block;
+}
+
+
+@media (max-width:576px) {
+
+  .mx thead > tr > td, .mx thead > tr > th {
+    vertical-align: baseline;
+    font-size: 10px;
+    padding-bottom:0px !important
+
+  }
+
+  tbody tr .prompt {
+    padding: 10px 0px 10px 10px !important;
+    text-align: left;
+    font-size: 12px !important;
+    min-width: 7em;
+}
 }
