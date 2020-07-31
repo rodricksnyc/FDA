@@ -330,6 +330,12 @@ h3.purple{
 margin-left:-10%;
 }
 
+.ques-wrapper option,
+.ques-wrapper select,
+.ques-wrapper textarea {
+      font-family: 'Public Sans', sans-serif !important;
+}
+
 
 .larger {
   font-size:1.3em;
