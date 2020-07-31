@@ -2510,7 +2510,7 @@ tbody tr .form-check .radio-inline {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:767px) {
 
   .mx thead > tr > td, .mx thead > tr > th {
     vertical-align: baseline;
