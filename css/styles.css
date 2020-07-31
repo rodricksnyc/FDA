@@ -337,6 +337,26 @@ margin-left:-10%;
       font-family: 'Public Sans', sans-serif !important;
 }
 
+select.select-arrow, select.select-arrow-light, select.form-control {
+  background-position: calc(100% - 3px) 50%;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: .75rem;
+  padding-right: 1.25rem;
+}
+select.select-arrow, select.form-control {
+background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 1000 1000'%3E%3Cpath d='M500,10L227.8,391.1h544.4L500,10z M500,990l272.2-381.1H227.8L500,990z'%3E%3C/path%3E%3C/svg%3E");
+}
+select.select-arrow-light {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 1000 1000'%3E%3Cpath d='M500,10L227.8,391.1h544.4L500,10z M500,990l272.2-381.1H227.8L500,990z'%3E%3C/path%3E%3C/svg%3E");
+}
+select::-ms-expand {
+  display: none;
+}
+
 
 .larger {
   font-size:1.3em;
