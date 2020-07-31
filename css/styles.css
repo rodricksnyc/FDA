@@ -328,6 +328,27 @@ h3.purple{
 
 .surveyPic1 {
 margin-left:-10%;
+max-width:46em;
+}
+
+@media (max-width:1350px) and (min-width:1100px) {
+  .surveyPic1 {
+  margin-left:0%;
+  max-width:38em;
+  }
+}
+
+@media (max-width:1099px) {
+  .surveyPic1 {
+  margin-left:0%;
+  max-width:30em;
+  }
+}
+
+@media (max-width:676px) {
+  .justify-content-around{
+    flex-direction: column;
+  }
 }
 
 .ques-wrapper option,
