@@ -124,7 +124,7 @@ $(document).ready(function () {
 		}, 1200, 'swing');
 	}
 
-	$('.customStack input').keydown(function (event) {
+	$('.customStack input, textarea').keydown(function (event) {
 		$('.next').css('background', '#c23294')
 
 });

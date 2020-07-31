@@ -193,10 +193,20 @@ h3.purple{
 .ques-wrapper.radiobuttons {
   position: relative;
   margin: 0rem auto 1.5rem;
-  padding: 0rem 0.5rem 2rem;
+  padding: 0rem 2rem 2rem;
   border-top: none;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
   padding-bottom: 0em;
+}
+
+.ques-wrapper textarea.form-control {
+    height: auto;
+    left: calc(50% - 250px);
+    width: 500px;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin: 1em 0em;
+    position: relative;
 }
 
 .customStack input {
@@ -1712,7 +1722,15 @@ text-align: left;
 }
 
 @media (max-width: 767px) {
-
+  .ques-wrapper textarea.form-control {
+      height: auto;
+      left: 0;
+      width: 100%;
+      border: 1px solid;
+      border-radius: 1rem;
+      margin: 1em 0em;
+      position: relative;
+  }
 
   #home {
     position: relative;
