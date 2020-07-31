@@ -332,7 +332,8 @@ margin-left:-10%;
 
 .ques-wrapper option,
 .ques-wrapper select,
-.ques-wrapper textarea {
+.ques-wrapper textarea,
+.ques-wrapper .form-control {
       font-family: 'Public Sans', sans-serif !important;
 }
 
