@@ -1808,6 +1808,7 @@ text-align: left;
   .surveyPic1, .surveyPic2 {
     margin-top:1em;
     margin-left:0%;
+    max-width:100% !important
   }
 
 
