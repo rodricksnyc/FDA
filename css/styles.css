@@ -331,21 +331,41 @@ margin-left:-10%;
 max-width:46em;
 }
 
-@media (max-width:1350px) and (min-width:1100px) {
-  .surveyPic1 {
-  margin-left:0%;
+.surveyPic2 {
+max-width:33em;
+}
+
+@media (min-width:1600px) {
+  .surveyPic2 {
   max-width:38em;
   }
 }
 
-@media (max-width:1099px) {
+@media (max-width:1350px) and (min-width:1130px) {
+  .surveyPic1 {
+  margin-left:0%;
+  max-width:38em;
+  }
+  .surveyPic2 {
+  max-width:30em;
+  }
+
+
+}
+
+@media (max-width:1129px) {
   .surveyPic1 {
   margin-left:0%;
   max-width:30em;
   }
+  .surveyPic2 {
+  max-width:28em;
+  }
+
+
 }
 
-@media (max-width:676px) {
+@media (max-width:767px) {
   .justify-content-around{
     flex-direction: column;
   }

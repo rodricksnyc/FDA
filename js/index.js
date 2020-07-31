@@ -161,6 +161,24 @@ $(document).ready(function () {
 }
 
 
+//scale logo
+
+// var resizeImg = function () {
+//
+// 	var preferredFontSize = 89; // %
+// 	var preferredSize = 1024 * 768;
+//
+// 	var currentSize = $(window).width() * $(window).height();
+// 	var scalePercentage = Math.sqrt(currentSize) / Math.sqrt(preferredSize);
+// 	var newFontSize = preferredFontSize * scalePercentage + 5;
+// 	$(".surveyPic2").css("width", newFontSize + '%');
+// };
+//
+//
+//
+// $(window).bind('resize', function() {
+// 	resizeImg();
+// }).trigger('resize');
 
 
 
