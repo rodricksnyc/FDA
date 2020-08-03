@@ -2628,11 +2628,30 @@ tbody tr .form-check .radio-inline {
 
   }
 
+  .mx-row-alt, .mx-row {
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+
+  .mx thead {
+    display: none
+  }
+
   tbody tr .prompt {
     padding: 10px 0px 10px 10px !important;
     text-align: left;
-    font-size: 12px !important;
-    min-width: 7em;
+    font-size: 18px !important;
+
+  }
+
+  .ques-wrapper tbody tr .form-check label {
+    padding-left: 37px !important;
+    padding-right: 5px;
+    margin-top: 8px;
+    font-size: 16px !important;
   }
 
 
