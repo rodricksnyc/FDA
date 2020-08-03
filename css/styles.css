@@ -2242,16 +2242,16 @@ text-align: left;
   }
   .flipIt {
     position: fixed;
-    right: 6%;
+    right: 5%;
     bottom: 0;
     top: 62%;
     height: 0em;
-    min-height: 3.4em;
+    min-height: 3.8em;
     z-index: 9999999;
     background: #007bbc;
     border-radius: 50%;
     padding: 0px 8px;
-    width: 3.4em;
+    width: 3.8em;
     visibility: hidden;
     box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.45);
   }
@@ -2261,13 +2261,13 @@ text-align: left;
     position: fixed;
     /* left: calc(50% - 1.25rem); */
     top: 72%;
-    right:8%;
+    right:6.75%;
     bottom: 0;
     z-index: 100;
     background: #c23294;
     color: white;
-    height: 2rem;
-    width: 2rem;
+    height: 2.4rem;
+    width: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2278,13 +2278,18 @@ text-align: left;
     visibility: hidden;
   }
 
+  .back-to-top i {
+    font-size: 36px;
+    font-weight: 100 !important;
+  }
+
   .survey-wrapper {
     max-width: 94%;
   }
 
   .flipIt img {
-    width: 2.2em;
-    height: 3.5em;
+    width: 3.2em;
+    height: 4em;
   }
 
   .bottom{
@@ -2299,16 +2304,15 @@ text-align: left;
 
   .flipIt {
 
-    right: 6%;
 
-    top: 56%;
+    top: 55.5%;
 
   }
 
   .back-to-top {
 
     top: 66.5%;
-    right:8%;
+
 
   }
 
@@ -2388,7 +2392,7 @@ text-align: left;
 
   .flipIt {
 
-    right: 6%;
+
 
     top: 48%;
 
@@ -2397,7 +2401,7 @@ text-align: left;
   .back-to-top {
 
     top: 61%;
-    right:8%;
+
 
   }
 
