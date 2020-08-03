@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
 	var flipThis = function() {
 		$(".bigCard").toggleClass('flipped')
 	}
@@ -57,7 +59,6 @@ $(document).ready(function () {
 
 	}
 
-
 	if ($(document).innerWidth() <= 1078) {
 		var higher = $('.whiteBox').height() + 290
 		$('.wrapper').css({
@@ -66,7 +67,16 @@ $(document).ready(function () {
 
 	}
 
-	if ($(document).innerWidth() <= 360) {
+
+	if ($(document).innerWidth() <= 375) {
+		var higher = $('.whiteBox').height() + 275
+		$('.wrapper').css({
+			'height' : higher
+		})
+
+	}
+
+	if ($(document).innerWidth() <= 320) {
 		var more = $('.whiteBox').height() + 350
 		$('.wrapper').css({
 			'height' : more
@@ -86,7 +96,7 @@ $(document).ready(function () {
 					'box-shadow' :'0px 0px 20px -2px rgba(0,0,0,0.45)',
 					'background' : 'white'
 				})
-				$('.flipIt img').attr('src', 'images/flip-blue.svg')
+				$('.flipIt img').attr('src', 'images/flip-hover.svg')
 
 			}
 
@@ -94,29 +104,29 @@ $(document).ready(function () {
 
 				$('.flipIt').css({
 					'box-shadow' :'none',
-					'background' : '#1e1c84'
+					'background' : '#007bbc'
 				})
 				$('.flipIt img').attr('src', 'images/flip-icon.svg')
 
 			}
 		})
 
+		$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 
-		// if ($('thead tr td').length > 4) {
-		//
-		// 	$('tbody tr .form-check input + label::before').css('left', '20px')
-		// }
-		// 	// 	tbody tr .form-check input + label::before {
-		// 	// 	  left:20px;
-		// 	// 	}
-		// 	// 	tbody tr .form-check input + label::before {
-		// 	// 	  left:22px;
-		// 	// 	}
-		// 	//
-		// 	// }
+
+			 		// $('.flipIt').css({
+					// 'top' : '35%'
+					//
+					// })
+   }
+	});
+
 
 
 	}
+
+
 
 
 	$('.back-to-top').click(() => {
@@ -129,6 +139,8 @@ $(document).ready(function () {
 		((window.pageYOffset || document.documentElement.scrollTop) > 100) ?
 		$('.back-to-top, .flipIt').css({ opacity: 1, visibility: "visible" }) :
 		$('.back-to-top, .flipIt').css({ opacity: 0, visibility: "hidden" });
+
+
 	});
 
 	function scrollfn(e) {
