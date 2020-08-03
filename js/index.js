@@ -101,6 +101,21 @@ $(document).ready(function () {
 			}
 		})
 
+
+		// if ($('thead tr td').length > 4) {
+		//
+		// 	$('tbody tr .form-check input + label::before').css('left', '20px')
+		// }
+		// 	// 	tbody tr .form-check input + label::before {
+		// 	// 	  left:20px;
+		// 	// 	}
+		// 	// 	tbody tr .form-check input + label::before {
+		// 	// 	  left:22px;
+		// 	// 	}
+		// 	//
+		// 	// }
+
+
 	}
 
 

@@ -2468,6 +2468,7 @@ text-align: left;
   font-weight: 500;
   /* margin-bottom: 17px; */
   padding-bottom: 10px !important;
+  padding-top: 10px !important;
   color: #007bbc;
 }
 
@@ -2597,7 +2598,8 @@ tbody tr .form-check .radio-inline {
   .mx thead > tr > td, .mx thead > tr > th {
     vertical-align: baseline;
     font-size: 10px;
-    padding-bottom:0px !important
+    padding-bottom:0px !important;
+    padding-left: 0em !important;
 
   }
 
@@ -2607,4 +2609,5 @@ tbody tr .form-check .radio-inline {
     font-size: 12px !important;
     min-width: 7em;
 }
+
 }
