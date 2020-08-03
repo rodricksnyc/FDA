@@ -111,20 +111,88 @@ $(document).ready(function () {
 			}
 		})
 
-		$(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	$(window).scroll(function() {
+if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
 
-
-			 		// $('.flipIt').css({
-					// 'top' : '35%'
-					//
-					// })
+			 		$('.flipIt').css({
+					'top' : '62%'
+					})
+					$('.back-to-top').css({
+					'top' : '72%'
+					})
    }
+	 else {
+
+		 $('.flipIt').css({
+			'top' : '84%'
+			})
+			$('.back-to-top').css({
+			'top' : '94%'
+			})
+
+	 }
+
 	});
 
 
-
 	}
+
+
+
+	if ($(document).innerWidth() <= 375) {
+
+	$(window).scroll(function() {
+if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+					$('.flipIt').css({
+					'top' : '55.5%'
+					})
+					$('.back-to-top').css({
+					'top' : '66.5%'
+					})
+	 }
+	 else {
+
+		 $('.flipIt').css({
+			'top' : '84%'
+			})
+			$('.back-to-top').css({
+			'top' : '94%'
+			})
+
+	 }
+
+	});
+
+}
+
+
+if ($(document).innerWidth() <= 320) {
+
+$(window).scroll(function() {
+if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+
+				$('.flipIt').css({
+				'top' : '48%'
+				})
+				$('.back-to-top').css({
+				'top' : '61%'
+				})
+ }
+ else {
+
+	 $('.flipIt').css({
+		'top' : '84%'
+		})
+		$('.back-to-top').css({
+		'top' : '94%'
+		})
+
+ }
+
+});
+
+}
 
 
 

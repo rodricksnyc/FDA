@@ -2244,7 +2244,7 @@ text-align: left;
     position: fixed;
     right: 5%;
     bottom: 0;
-    top: 62%;
+    top: 84%;
     height: 0em;
     min-height: 3.8em;
     z-index: 9999999;
@@ -2260,7 +2260,7 @@ text-align: left;
     display: block;
     position: fixed;
     /* left: calc(50% - 1.25rem); */
-    top: 72%;
+    top: 94%;
     right:6.75%;
     bottom: 0;
     z-index: 100;
@@ -2303,16 +2303,12 @@ text-align: left;
   }
 
   .flipIt {
-
-
     top: 55.5%;
 
   }
 
   .back-to-top {
-
     top: 66.5%;
-
 
   }
 
@@ -2391,18 +2387,12 @@ text-align: left;
   }
 
   .flipIt {
-
-
-
     top: 48%;
 
   }
 
   .back-to-top {
-
     top: 61%;
-
-
   }
 
 
