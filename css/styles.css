@@ -229,6 +229,9 @@ h3.purple{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+
+
 }
 
 .button-default {
@@ -250,6 +253,14 @@ h3.purple{
 }
 .button-default:hover {
   background-color:#007bbc
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+}
+
+.btn-group-left, .btn-group-right {
+    display: flex;
 }
 
 .gray{
@@ -1697,9 +1708,9 @@ text-align: left;
     min-height: calc(100vh - 54rem);
   }
 
-  main{
+  /* main{
     height: 76vh
-  }
+  } */
 
 }
 

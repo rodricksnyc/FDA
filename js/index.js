@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
 	var flipThis = function() {
 		$(".bigCard").toggleClass('flipped')
 	}
