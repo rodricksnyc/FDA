@@ -124,6 +124,14 @@ h3.purple{
   font-family: 'Public Sans', sans-serif !important;
 }
 
+.black {
+  font-size: 16px !important;
+  padding: .6em 0em !important;
+  margin-bottom: 0em !important;
+  color:#007bbc;
+  font-family: 'Public Sans', sans-serif !important;
+}
+
 .consent .prompt {
   color:black
 }
