@@ -120,8 +120,12 @@ h3.purple{
   font-size: 16px !important;
   padding: .6em 0em !important;
   margin-bottom: 0em !important;
-  color: black;
+  color:#007bbc;
   font-family: 'Public Sans', sans-serif !important;
+}
+
+.consent .prompt {
+  color:black
 }
 
 .start {
@@ -225,13 +229,14 @@ h3.purple{
 .survey-btn-group {
   display: flex;
   margin: 0rem 0rem 4rem 0rem;
-  width: 100%;
-  justify-content: center;
+  /* width: 100%;
+  justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
-
-
-
+  justify-content: space-around;
+  width:64%;
+  margin-left:18%;
+  margin-right:18%;
 }
 
 .button-default {
