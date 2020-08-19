@@ -276,6 +276,9 @@ $(document).ready(function () {
 	// }).trigger('resize');
 
 
+	if ($('span').hasClass('moveBelow')) {
+		$('.form-check-label').addClass('moveLabel')
+	}
 
 	//switch images and text
 

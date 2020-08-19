@@ -269,11 +269,11 @@ h3.purple{
 }
 
 .btn.disabled, .btn:disabled {
-    opacity: 1;
+  opacity: 1;
 }
 
 .btn-group-left, .btn-group-right {
-    display: flex;
+  display: flex;
 }
 
 .gray{
@@ -1706,10 +1706,18 @@ text-align: left;
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   #home {
     padding-top:3vh;
   }
+  .survey-wrapper {
+    max-width: 90%;
+  }
+
+}
+
+@media (max-width: 992px) {
+
   .survey-wrapper {
     max-width: 94%;
   }
@@ -1722,7 +1730,7 @@ text-align: left;
   }
 
   /* main{
-    height: 76vh
+  height: 76vh
   } */
 
 }
@@ -2555,6 +2563,30 @@ table {
 
 .mx-row-alt {
   background-color:#e0e0e0 !important;
+
+}
+
+td {
+  position: relative;
+}
+.moveBelow {
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  left: calc(50% - 3.5em);
+  font-size:13px;
+  width:7em;
+}
+
+@media (min-width:768px)  {
+
+  tbody tr .form-check input + label.moveLabel::before {
+    left: 43%
+  }
+
+  tbody tr .form-check input + label.moveLabel::after {
+    left: 44.5%
+  }
 
 }
 
