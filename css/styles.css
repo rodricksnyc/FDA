@@ -526,6 +526,21 @@ select.select-arrow, select.form-control {
   padding-top:1em;
 }
 
+
+
+footer .disclaimer {
+  position: absolute;
+  top:0;
+  right:2%;
+  max-width:17em
+}
+
+footer .disclaimer p{
+line-height: 1.5;
+color:white;
+margin:0em
+}
+
 .p1 {
   padding:.5em 0em 1em 0em;
 }
@@ -1915,16 +1930,28 @@ text-align: left;
 
   }
 
-  /* .absoluteGroup {
-    position: absolute;
+  footer .disclaimer {
+      position: absolute;
+      top: -12%;
+      right: 2%;
+      max-width: 9em;
+  }
+  footer .disclaimer p {
+  font-size: 11px;
+}
 
-    bottom: 0%;
+  .end2 {
+    padding-left:1em;
+    min-width:87%;
+  }
 
-    z-index: 999999;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  } */
+
+.end2 p.white {
+  font-size: 1em !important;
+max-width: 12em;
+
+}
+
   .button-default {
     padding: .6em 3.2em !important;
     margin: 1rem 1rem !important;
@@ -2443,10 +2470,15 @@ text-align: left;
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 322px) {
   html, body{
     min-width: 320px !important;
   }
+
+  .end2 {
+    padding-left: 1em;
+    min-width: 100%;
+}
 
   .hero-img-container.secondOne {
     height: 1025px !important;
